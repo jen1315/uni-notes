@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "4fb0a9f7fad5f0e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "55f952308fc37092",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab42e12500889277",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Basi di dati.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Basi di dati"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c508bed5839b0060",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f7b3d3758ec938a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30a84067d28f6e83",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f45cd9ead428cdf8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cast",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0937ecc04283f138",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "ef44d6dff8988bf3",
+    "type": "split",
+    "children": [
+      {
+        "id": "87184e0a701636e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11e69ef3895deac5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Basi di dati.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Basi di dati"
+            }
+          },
+          {
+            "id": "2a57643d313484f3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "948c10f2abc2c96f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d933a49bce744f86",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Basi di dati.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Basi di dati"
+            }
+          },
+          {
+            "id": "257bf2fdf1c0cbf9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Scienze informatiche/Algoritmi e strutture dati.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Algoritmi e strutture dati"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "ab42e12500889277",
+  "lastOpenFiles": [
+    "Scienze informatiche/2o anno/Diritto.md",
+    "Scienze informatiche/2o anno/Automi e linguaggi formali.md",
+    "Scienze informatiche/2o anno/Basi di dati.md",
+    "Scienze informatiche/2o anno/Calcolo numerico.md",
+    "Scienze informatiche/2o anno/Es Algoritmi.md",
+    "Scienze informatiche/2o anno/Metodi e tecnologie per Sviluppo Software.md",
+    "Scienze informatiche/2o anno/Paradigmi di Programmazione.md",
+    "Scienze informatiche/2o anno/Probabilità e Statistica.md",
+    "Scienze informatiche/2o anno/Qt (Programmazione ad oggetti).md",
+    "Scienze informatiche/2o anno/Programmazione ad oggetti.md",
+    "Scienze informatiche/2o anno/Reti di elaboratori.md",
+    "Pasted image 20250303125435.png.~tmp",
+    "img/Pasted image 20250303125435.png",
+    "img/Biblioteca 2.png",
+    "Statistica per le tecnologie/Base di dati.md",
+    "img/16.png",
+    "img/1.webp",
+    "img/3-s2.0-B9780323919234000045-f07-05-9780323919234.jpg",
+    "img/IPv4_Packet-en.svg",
+    "img/ipsec-ESP-tunnel.png",
+    "img/IMG_7709.jpg",
+    "img/IMG_7686.jpg",
+    "img/IMG_7685.jpg",
+    "IMG_8484.jpeg.md",
+    "Scienze informatiche/2o anno",
+    "Scienze informatiche/1o anno/Algoritmi e strutture dati.md",
+    "Scienze informatiche/1o anno/Sistemi operativi.md",
+    "Scienze informatiche/Analisi matematica/Calcolo integrale.md",
+    "Glossario CN.md",
+    "Statistica per le tecnologie/stat_comp codice.md",
+    "[].md",
+    "IS-LM model.md",
+    "Scienze informatiche/Analisi matematica/Analisi (logica).md",
+    "Scienze informatiche/Cybersecurity.md",
+    "Scienze informatiche/Reti di Calcolatori - Copia.md",
+    "Scienze informatiche/1o anno/Programmazione.md",
+    "Scienze informatiche/1o anno/Architettura_dei_elaboratori.md",
+    "Scienze informatiche/1o anno",
+    "img"
+  ]
+}
