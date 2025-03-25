@@ -4,22 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "55f952308fc37092",
+        "id": "6818c0e34561612b",
         "type": "tabs",
         "children": [
           {
-            "id": "ab42e12500889277",
+            "id": "b7771004df93fa30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scienze informatiche/2o anno/Basi di dati.md",
+                "file": "Scienze informatiche/2o anno/Automi e linguaggi formali.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Automi e linguaggi formali"
+            }
+          },
+          {
+            "id": "58400013a9cc3646",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Metodi e tecnologie per Sviluppo Software.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Metodi e tecnologie per Sviluppo Software"
+            }
+          },
+          {
+            "id": "9430a9104edaff62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Paradigmi di Programmazione.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Paradigmi di Programmazione"
             }
           }
         ]
@@ -115,6 +145,25 @@
             }
           },
           {
+            "id": "d933a49bce744f86",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Scienze informatiche/2o anno/Probabilità e Statistica.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Probabilità e Statistica"
+            }
+          },
+          {
             "id": "948c10f2abc2c96f",
             "type": "leaf",
             "state": {
@@ -127,25 +176,6 @@
               },
               "icon": "lucide-tags",
               "title": "Tags"
-            }
-          },
-          {
-            "id": "d933a49bce744f86",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Scienze informatiche/2o anno/Basi di dati.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Basi di dati"
             }
           },
           {
@@ -163,7 +193,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -181,31 +211,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ab42e12500889277",
+  "active": "30a84067d28f6e83",
   "lastOpenFiles": [
-    "Scienze informatiche/2o anno/Diritto.md",
+    "img/Pasted image 20250305143823.png",
     "Scienze informatiche/2o anno/Automi e linguaggi formali.md",
+    "img/Pasted image 20250324154000.png",
     "Scienze informatiche/2o anno/Basi di dati.md",
-    "Scienze informatiche/2o anno/Calcolo numerico.md",
-    "Scienze informatiche/2o anno/Es Algoritmi.md",
-    "Scienze informatiche/2o anno/Metodi e tecnologie per Sviluppo Software.md",
     "Scienze informatiche/2o anno/Paradigmi di Programmazione.md",
+    "Scienze informatiche/2o anno/Metodi e tecnologie per Sviluppo Software.md",
+    "img/Pasted image 20250324144615.png",
+    "1_1_y1njK_-OW_Sqv1cKlDcg.png",
+    "img/Pasted image 20250324144647.png",
+    "Pasted image 20250324150152.png",
+    "img/Pasted image 20250324150551.png",
+    "Pasted image 20250324151744.png",
+    "img/Pasted image 20250324153331.png",
+    "Scienze informatiche/2o anno/Calcolo numerico.md",
+    "Scienze informatiche/2o anno/Diritto e Società.md",
+    "Foglio 1.md",
+    "img/Scrum-Process-414428007.jpg",
     "Scienze informatiche/2o anno/Probabilità e Statistica.md",
-    "Scienze informatiche/2o anno/Qt (Programmazione ad oggetti).md",
     "Scienze informatiche/2o anno/Programmazione ad oggetti.md",
+    "Ambasciatori della sostenibilità.md",
+    "Scienze informatiche/2o anno/Qt (Programmazione ad oggetti).md",
+    "Scienze informatiche/2o anno/Es Automi.md",
+    "Scienze informatiche/2o anno/Cybersecurity.md",
+    "Scienze informatiche/2o anno/Es Algoritmi.md",
     "Scienze informatiche/2o anno/Reti di elaboratori.md",
     "Pasted image 20250303125435.png.~tmp",
-    "img/Pasted image 20250303125435.png",
-    "img/Biblioteca 2.png",
     "Statistica per le tecnologie/Base di dati.md",
-    "img/16.png",
-    "img/1.webp",
-    "img/3-s2.0-B9780323919234000045-f07-05-9780323919234.jpg",
-    "img/IPv4_Packet-en.svg",
-    "img/ipsec-ESP-tunnel.png",
-    "img/IMG_7709.jpg",
-    "img/IMG_7686.jpg",
-    "img/IMG_7685.jpg",
     "IMG_8484.jpeg.md",
     "Scienze informatiche/2o anno",
     "Scienze informatiche/1o anno/Algoritmi e strutture dati.md",
@@ -216,10 +250,6 @@
     "[].md",
     "IS-LM model.md",
     "Scienze informatiche/Analisi matematica/Analisi (logica).md",
-    "Scienze informatiche/Cybersecurity.md",
-    "Scienze informatiche/Reti di Calcolatori - Copia.md",
-    "Scienze informatiche/1o anno/Programmazione.md",
-    "Scienze informatiche/1o anno/Architettura_dei_elaboratori.md",
     "Scienze informatiche/1o anno",
     "img"
   ]
