@@ -250,7 +250,7 @@ Usato per array di elementi di dimensione diversa.
 
 **Array di due dimensioni**
 ``` c
-int ar[2][3] = {{1,2,3},{4,5,6}} = {1,2,3,4,5,6}
+int ar[2][3] = { {1,2,3},{4,5,6} } = {1,2,3,4,5,6}
 printf("%d\n", *(*(ar+1)+2)); // =ar[1][2]=6
 ```
 #### Ricorsione
