@@ -1,4 +1,6 @@
 ---
+layout: page
+title: Programmazione ad oggetti
 share: true
 ---
 

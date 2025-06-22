@@ -1,4 +1,6 @@
 ---
+layout: page
+title: Algoritmi e strutture dati
 share: true
 ---
 
