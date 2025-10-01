@@ -1,1 +1,4 @@
 baseurl: /uni-notes
+theme: jekyll-theme-minima
+kramdown:
+  math_engine: mathjax
