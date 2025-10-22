@@ -1,6 +1,4 @@
 ---
-layout: page
-title: Programmazione
 share: true
 ---
 
@@ -347,7 +345,7 @@ all: hello
 hello:
 	$(CC) -o hello file1.c file2.c file3.c
 test:
-	$(CC) $(CFLAGS) -o hello file1.c file2.c file3.c
+	$$(CC) $$(CFLAGS) -o hello file1.c file2.c file3.c
 clean:
 	rm hello test
 ```

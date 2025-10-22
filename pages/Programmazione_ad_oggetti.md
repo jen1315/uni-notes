@@ -3,7 +3,6 @@ layout: page
 title: Programmazione ad oggetti
 share: true
 ---
-
 “Appunti di programmazione ad oggetti” Francesco Ranzato
 
 Un programma è costituito da
@@ -1422,7 +1421,7 @@ Questa relazione induce il *subtyping* (o subsumption).
 B sono supertipo e D sottotipo, ovvero le funzioni che operano sul supertipo funzionano sui sottotipo. C'è conversione di tipo.
 
 D => B estrae il sottooggetto
-D* => B*$\qquad$D& => B&$\quad$ sono puntatori e riferimenti *polimorfi*. 
+D* => B*$$\qquad$$D& => B&$$\quad$$ sono puntatori e riferimenti *polimorfi*. 
 **Tipo dinamico**, tipo effettivo dell'oggetto puntato in un certo istante. Il compilatore conosce solo tipi statici.
 
 Si possono fare `static_cast` tra puntatori e riferimenti polimorfi ma è può essere una operazione "pericolosa".
@@ -1593,7 +1592,9 @@ int main() {
 ```
 
 **Upcasting e Downcasting**
-Quando abbiamo un un puntatore di tipo che punta a un suo sottotipo, si può voler specializzare il puntatore (downcast).
+Quando abbiamo un puntatore derivato si potrebbe voler generalizzare il puntatore (upcast).
+
+Quando abbiamo un puntatore di tipo che punta a un suo sottotipo, si può voler specializzare il puntatore (downcast).
 ``` c++
 // B* => D*
 dynamic_cast<D*>(p) != nullptr // TD(p) <= D*
