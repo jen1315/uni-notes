@@ -163,8 +163,7 @@ Induzione su $$\ell=$$
 
 **Principio di Induzione**
 proprietà parametrica in $$n\in\mathbb{N}\qquad P(n)=\{…n…\}$$
-per dimostrare che $$P(n)$$ vale per ogni $$n\in\mathbb{N}$$
-$\left.\begin{array}{ll}P(0)&\text{caso base}\\\text{assumendo }P(n)\text{ dimostro che }P(n+1)&\text{caso induttivo}\end{array}\right\}\rightarrow$$ per ogni $$n\in\mathbb{N}$$ vale $$P(n)$$
+per dimostrare che $$P(n)$$ vale per ogni $$n\in\mathbb{N}$$ $\left.\begin{array}{ll}P(0)&\text{caso base}\\\text{assumendo }P(n)\text{ dimostro che }P(n+1)&\text{caso induttivo}\end{array}\right\}\rightarrow$$ per ogni $$n\in\mathbb{N}$$ vale $$P(n)$$
 
 **Induzione forte**
 $$\left.\begin{array}{ll}P(0)\\\text{assumendo }P(n)\text{ vale per ogni }m<n\quad\dim P(n)\end{array}\right\}\rightarrow P(n)$$ vale per ogni $$n$
@@ -263,10 +262,10 @@ $$f\cdot g:\mathbb{R}^{’}\rightarrow\mathbb{R}^{”}$$
 $$f(n),g(n)$$
 
 **Limite asintotico superiore**
-Dato $$g(n)$$$$\begin{align*}O(g(n))=\{f(n)\ |\ &\exists\ c>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq f(n)\leq c\cdot g(n)\}\end{align*}$$
+Dato $$g(n)$$ $$\begin{align*}O(g(n))=\{f(n)\ |\ &\exists\ c>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq f(n)\leq c\cdot g(n)\}\end{align*}$$
 **Limite inferiore asintotico**
-Dato $$g(n)$$$$\begin{align*}\Omega(g(n))=\{f(n)\ |\ &\exists\ c>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq c\cdot g(n)\leq f(n)\}\end{align*}$$**Limite asintotico stretto**
-Dato $$g(n)$$$$\begin{align*}\Theta(g(n))=\{f(n)\ |\ &\exists\ c_{1}>0, c_{2}>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq c_{1}\cdot g(n)\leq f(n)\leq c_{2}\cdot g(n)\}\end{align*}$$
+Dato $$g(n)$$ $$\begin{align*}\Omega(g(n))=\{f(n)\ |\ &\exists\ c>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq c\cdot g(n)\leq f(n)\}\end{align*}$$**Limite asintotico stretto**
+Dato $$g(n)$$ $$\begin{align*}\Theta(g(n))=\{f(n)\ |\ &\exists\ c_{1}>0, c_{2}>0\ \exists\ n_{0} \forall n\geq n_{0}\\ &0\leq c_{1}\cdot g(n)\leq f(n)\leq c_{2}\cdot g(n)\}\end{align*}$$
 <u>Metodo del limite</u>
 Dato $$f(n),g(n)\quad >0$$
 1. $$\displaystyle\lim_{n\rightarrow\infty}\frac{f(n)}{g(n)}=k>0\qquad\text{allora }f(n)=\Theta(g(n))$$
@@ -1511,10 +1510,10 @@ $$\Omega(2^{m}\cdot2^{n})\quad$$<u>esponenziale</u>!
 
 Cerchiamo una struttura ricorsiva
 (caso base)
-$$\begin{align*}X&=<X',a>\\ Y&=<Y',a>\end{align*}\qquad$$$\begin{align*}Z&=LCS(X,Y)=?\\&=<Z',a>\text{ dove }Z'=LCS(X',Y')\end{align*}$$
+$$\begin{align*}X&=<X',a>\\ Y&=<Y',a>\end{align*}\qquad$$ $$\begin{align*}Z&=LCS(X,Y)=?\\&=<Z',a>\text{ dove }Z'=LCS(X',Y')\end{align*}$$
 
 (altri casi)
-$$\begin{align*}X&=<X',a>\\ Y&=<Y',b>\end{align*}\qquad$$\begin{align*}Z&=LCS(X,Y)=?\quad\text{la più lungo tra }LCS(X',Y)\text{ e }LCS(X,Y')\\&=\cancel{LCS(X',Y')}\end{align*}$$
+$$\begin{align*}X&=<X',a>\\ Y&=<Y',b>\end{align*}\qquad$$ $$\begin{align*}Z&=LCS(X,Y)=?\quad\text{la più lungo tra }LCS(X',Y)\text{ e }LCS(X,Y')\\&=\cancel{LCS(X',Y')}\end{align*}$$
 dentro a,b potrebbero esserci gli stessi caratteri
 
 Spazio sottoproblemi:
@@ -1523,7 +1522,7 @@ $$|S|=(m+1)(n+1)\quad$$<u>quadratico</u>
 (non è esp come l'algoritmo esaustivo)
 
 *Proprietà di sottostruttura ottima* per il sottoproblema $$LCS(X_{i},Y_{i})$$
-$$\begin{align*}X_{i}&=<x_{1},...,x_{i}>\\ Y_{j}&=<y_{1},...,y_{j}>\end{align*}$$
+$\begin{align*}X_{i}&=<x_{1},...,x_{i}>\\ Y_{j}&=<y_{1},...,y_{j}>\end{align*}$$
 sia $$Z=<z_{1},...,z_{k}>=LCS(X_{i},Y_{i})$$
 0) (caso base) i=0 oppure j=0 allora $$Z=\varepsilon$$
 1) $$(i,j)>0\text{ se }x_{i}=y_{j}$ allora
