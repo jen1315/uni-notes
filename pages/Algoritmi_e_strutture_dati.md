@@ -621,7 +621,7 @@ L’albero quasi completo: tutti i livelli completi tranne l’ultimo, dove le f
 
 Heap: albero ordinato binario quasi completo
 Implementato come array
-![[Pasted image 20241017152519.png|Pasted image 20241017152519.png]]
+![[img/Pasted image 20241017152519.png|img/Pasted image 20241017152519.png]]
 ```
 Radice A[i]
 Nodo A[i] figlio sx A[2*i]
@@ -642,11 +642,12 @@ Come ottengo un max-heap?
 - dato un nodo i in heap con sottoalbero max-heap, è facile sistemarla con
 ```
 MaxHeapify(A, i)
-	l = Left(i)
-	r = Right(i)
-	if (l <= A.size) and (A[l] > A[i])
+	max = i
+	l = Left(i)  // 2*i
+	r = Right(i) // 2*i+1
+	if (l <= A.size) and (A[l] > A[max])
 		max = l
-	if (r <= A.size) and (A[r] > A[i])
+	if (r <= A.size) and (A[r] > A[max])
 		max = r
 	if max != i
 		A[i] <-> A[max]
