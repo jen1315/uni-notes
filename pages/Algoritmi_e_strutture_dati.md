@@ -999,6 +999,7 @@ Delete(T,x) // O(1)
 Search(T,k) // O(n) caso peggiore
 	cerca un elemento con chiave k nella lista T[h(k)]
 ```
+
 **Caso medio**
 m = numero celle tabella
 n = numero di elementi memorizzati
