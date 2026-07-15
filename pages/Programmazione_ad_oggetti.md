@@ -423,13 +423,14 @@ int x=1, y=4, z=7;
 x = y = z;
 
 cout << x << " " << y << " " << z; // ritorna 7 7 7
- ```
+```
  
  Il costruttore di copia viene invocato
  1. quando una istanza di oggetto viene dichiarata e inizializzata con un altro oggetto della stessa classe
  2. quando un oggetto viene **passato per valore**
  3. quando una funzione **ritorna per valore**
 	 Lo standard propone una ottimizzazione a questo punto: evita di creare un temporaneo anonimo che è usato per inizializzare un altro oggetto dello stesso tipo (questo cambia a seconda del compilatore usato).
+
 ``` c++
 C fun(C a) { return a; }
 C f(C a) {
@@ -465,8 +466,6 @@ ostream& operator<<(ostream& os, const orario& o) {
 }
 ```
 Possiamo raggrupparlo insieme alla classe con un namespace.
-
-(Martedì iniziamo alle 14:00)
 
 **Operatore di somma +**
 Come metodo interno, NON È COMMUTATIVA
@@ -569,7 +568,7 @@ private:
 	orario inizio, fine;
 	const int numero; // non possono essere modificati quindi deve essere assegnato in inizializzazione
 public:
-	telefonata(orario,orario,int);
+	telefonata(const orario&, const orario&,int);
 	telefonata();
 	orario Inizio() const;
 	orario Fine() const;
@@ -1497,7 +1496,7 @@ D& operator=(const D& x) {
 
 Distruttore funziona come i distruttori normali quindi, distrugge gli oggetti in modo inverso della costruzione.
 
-9### Binding dinamico
+### Binding dinamico
 *Static binding* nell'invocazione di metodi
 ``` c++
 class Base {
@@ -1916,7 +1915,7 @@ class C {
 \[capture list] elenca la lista delle variabili della closure cioè variabili all'esterno della lambda usate come l-valore (lettura, scrittura) o r-valore (sola lettura) della lambda.
 
 C++14
-- auto come valore di ritorno della funzioen
+- auto come valore di ritorno della funzione
 C++17
 - nested namespaces
 - variable declaration in if
