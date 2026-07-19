@@ -1,4 +1,11 @@
----
----
-
 @import "jekyll-theme-minimal";
+
+:root {
+    --body-bg: #EEE2DC;
+    --body-color: #AC3B61;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color) !important;
+}
