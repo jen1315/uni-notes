@@ -12,7 +12,9 @@ Derivata =
 
 Integrale = 
 
-Derivabilità di una funzione in x
+**Derivabilità di una funzione in x**
+Una funzione è derivabile in $$x_{0}$$ se il limite sinistro e il limite destro del rapporto incrementale nel punto esistono finiti e uguali.
+$$\lim_{x\rightarrow0^{-}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=\lim_{x\rightarrow0^{+}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=c\in\mathbb{R}$$
 ### Teoremi
 **Teorema di Rolle**
 Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua e derivabile in $$]a,b[$$ tale che $$f(a)=f(b)$$ allora $$]X_{0} \in[a,b]:f'(x_0)=0$$.
@@ -30,6 +32,7 @@ Siano $$f,g:[a,b]\rightarrow\mathbb{R}$$ continue e derivabili in $$]a,b[-\{0\}$
 Se $$f:[a,b]\rightarrow\mathbb{R}$$ è continua e $$c\in[a,b]$$ definita $$F_{c}(x)=\int^{x}_{c}f(t)dt$$, allora Fc è derivabile e vale $$F'_{c}(x)=f(x)$$ per $$x\in[a,b]$$. 
 
 **Teorema della media integrale**
+Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che $$f(c)=\frac{1}{b-a}\int_{a}^{b}f(t)dt$$.
 ### Criteri di convergenza
 **Criterio del confronto**
 Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, se $$a_{n}\leq b_{n}$$ definitivamente, allora se $$\sum\limits b_{n}$$ converge $$\sum\limits a_{n}$$ converge e se $$\sum\limits a_{n}$$ diverge $$\sum\limits b_{n}$$ diverge.
@@ -45,11 +48,23 @@ Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positi
 
 $\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
 ### Limiti
+
 **Equivalenze asintotiche**
 (per $$x\rightarrow0$$)
 $$\sin x\sim x\qquad 1-\cos x\sim\frac{1}{2}x^{2}\qquad \tan x\sim x$$
 $$e^{1}\sim x\qquad (1+x)^{a}-1\sim ax$$
 funzionano per rapporti, esponenziali e prodotti
+
+### Derivate
+di polinomi composti
+- somma/differenza
+  $$\frac{d}{dx}[f(x)\pm g(x)]=f'(x)\pm g'(x)$$
+- prodotto con costante
+  $$\frac{d}{dx}[f(x)\cdot c]=f'(x)\cdot c$$
+- prodotto
+  $$\frac{d}{dx}[f(x)\cdot g(x)]=f'(x)g(x)+f(x)g'(x)$$
+- rapporto
+  $$\frac{d}{dx}[\frac{f(x)}{g(x)}]=\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^{2}}$$
 
 ### Integrali
 **Operazioni tra polinomi**
