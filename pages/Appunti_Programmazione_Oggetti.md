@@ -11,6 +11,7 @@ Una carrellata di informazioni utili per l'appello di Programmazione ad Oggetti 
 - `delete` se `~` non virtuale, solo `~` della classe dinamica
 - chiamata `f1()` in `f()` di classe T, priorità `f1()` in T (se non virtual)
 - `T* p = new TD` non richiama costruttore di copia
+
 ### Funzioni
 #### controllo di tipo 
 `typeid(T)` per comparazioni
