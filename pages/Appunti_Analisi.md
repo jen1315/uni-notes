@@ -4,18 +4,21 @@ title: Appunti analisi
 share: true
 ---
 Una carrellata di informazioni utili per l'appello di Analisi 1 @unipd
-## Teoria
-### Definizioni
+
+## ~ Teoria
+### > Definizioni
+
 Limite = 
 
 Derivata = 
 
-Integrale = 
+Integrale = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b] individuata dai punti $x_{0},...,x_{n}$$ con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $$j=0,...,n$$ 
 
 **Derivabilità di una funzione in x**
-Una funzione è derivabile in $$x_{0}$$ se il limite sinistro e il limite destro del rapporto incrementale nel punto esistono finiti e uguali.
+Una funzione è derivabile in $$x_{0}$ se il limite sinistro e il limite destro del rapporto incrementale nel punto esistono finiti e uguali.
 $$\lim_{x\rightarrow0^{-}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=\lim_{x\rightarrow0^{+}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=c\in\mathbb{R}$$
-### Teoremi
+
+### > Teoremi
 **Teorema di Rolle**
 Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua e derivabile in $$]a,b[$$ tale che $$f(a)=f(b)$$ allora $$]X_{0} \in[a,b]:f'(x_0)=0$$.
 
@@ -23,31 +26,57 @@ Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua e derivabile in $$]a,b[$$ tale che
 Sia $$y=f(x)$$ una funzione con $$Dom(f)$$. Se $$x_{0}\in Dom(f)$$ è un punto di massimo o minimo relativo per f, e la funzione è derivabile in $$x_{0}$$ allora $$f'(x_{0})=0$$.
 
 **Teorema di Lagrange**
-Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua, derivabile in $$]a,b[$$ allora $$\exists c\in]a,b[$$ tale che $$f'(c)=\frac{f(b)-f(a)}{b-a}$$
+Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua, derivabile in $$]a,b[$$ allora $$\exists c\in]a,b[$$ tale che 
+$$f'(c)=\frac{f(b)-f(a)}{b-a}$$
 
 **Teorema de l'Hopital**
-Siano $$f,g:[a,b]\rightarrow\mathbb{R}$$ continue e derivabili in $$]a,b[-\{0\}$$. Supponiamo $$f'(x_{0})=g'(x_{0})$$ e $$g'(x)\neq0\quad\forall\ x\neq x_{0}$$. Allora esiste $$L=\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}=\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}$$
+Siano $$f,g:[a,b]\rightarrow\mathbb{R}$$ continue e derivabili in $$]a,b[-\{0\}$$. Supponiamo $$f'(x_{0})=g'(x_{0})$$ e $$g'(x)\neq0\quad\forall\ x\neq x_{0}$$. Allora esiste
+$$L=\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}=\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}$$
 
 **Teorema fondamentale del calcolo integrale**
 Se $$f:[a,b]\rightarrow\mathbb{R}$$ è continua e $$c\in[a,b]$$ definita $$F_{c}(x)=\int^{x}_{c}f(t)dt$$, allora Fc è derivabile e vale $$F'_{c}(x)=f(x)$$ per $$x\in[a,b]$$. 
 
 **Teorema della media integrale**
-Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che $$f(c)=\frac{1}{b-a}\int_{a}^{b}f(t)dt$$.
-### Criteri di convergenza
+Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che $$f(c)=\frac{1}{b-a}\int_{a}^{b}f(t)dt$$
+### > Criteri di convergenza
 **Criterio del confronto**
 Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, se $$a_{n}\leq b_{n}$$ definitivamente, allora se $$\sum\limits b_{n}$$ converge $$\sum\limits a_{n}$$ converge e se $$\sum\limits a_{n}$$ diverge $$\sum\limits b_{n}$$ diverge.
 
 **Criterio del confronto asintotico**
-Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, 
+Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, con $$b_{n}\neq0$$ per ogni $$n\in\mathbb{N}$$ e supponiamo che esiste $$\lim_{n\rightarrow+\infty}\frac{a_{n}}{b_{n}}=L$$
+allora
+- se $$L\in(0,+\infty)$$, le due serie hanno lo stesso carattere
+- se $$L=0$$ e $$\sum\limits b_{n}$$ converge, $$\sum\limits a_{n}$$ converge
+- se $$L=+\infty$$ e $$\sum\limits b_{n}$$ diverge, $$\sum\limits a_{n}$$ diverge
 
 **Criterio del rapporto**
-**Criterio della radice**
-**Criterio di Leibniz**
+Siano $$\sum\limits a_{n}$$ una serie dai termini positivi e $$\lim_{n\rightarrow+\infty}\frac{a_{n}+1}{a_{n}}=L$$ allora
+- se L>1, la serie converge
+- se L>1, la serie diverge
+- se L=1, non possiamo concludere niente.
 
-## Pratica
+**Criterio della radice**
+Siano $$\sum\limits a_{n}$$ una serie dai termini positivi, se esiste $$\lim_{n\rightarrow+\infty}\sqrt[n]{a_{n}}=L$$
+allora
+- se L>1, la serie converge
+- se L>1, la serie diverge
+- se L=1, non possiamo concludere niente.
+
+**Criterio di Leibniz**
+Si consideri $$\sum\limits_{n\geq0}(-1)^{n}a_{n}$$ se
+1. $$a_{n}\geq0$$ per ogni $$n\geq0$$
+2. $$a_{n}\geq a_{n+1}$$
+3. $$\lim_{n\rightarrow+\infty}a_{n}=0$$
+allora la serie converge.
+
+## ~ Pratica
 
 $\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
-### Limiti
+
+Simmetrie
+pari: $$f(-x)=f(x)\qquad$$ dispari: $$f(-x)=-f(x)$$
+
+### > Limiti
 
 **Equivalenze asintotiche**
 (per $$x\rightarrow0$$)
@@ -55,7 +84,7 @@ $$\sin x\sim x\qquad 1-\cos x\sim\frac{1}{2}x^{2}\qquad \tan x\sim x$$
 $$e^{1}\sim x\qquad (1+x)^{a}-1\sim ax$$
 funzionano per rapporti, esponenziali e prodotti
 
-### Derivate
+### > Derivate
 di polinomi composti
 - somma/differenza
   $$\frac{d}{dx}[f(x)\pm g(x)]=f'(x)\pm g'(x)$$
@@ -66,7 +95,7 @@ di polinomi composti
 - rapporto
   $$\frac{d}{dx}[\frac{f(x)}{g(x)}]=\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^{2}}$$
 
-### Integrali
+### > Integrali
 **Operazioni tra polinomi**
 - somma/differenza
   $$\int f(x)\pm g(x)dx=\int f(x)\pm\int g(x)dx$$
