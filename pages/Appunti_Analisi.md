@@ -5,18 +5,22 @@ share: true
 ---
 Una carrellata di informazioni utili per l'appello di Analisi 1 @unipd
 
-## ~ Teoria
+## Teoria
 ### > Definizioni
 
-Limite = 
+*Limite* = 
 
-Derivata = 
+*Derivata* = Sia $$f:(a,b)\rightarrow\mathbb{R}$$, la derivata è il limite finito di 
+$$\lim_{h\rightarrow0}\frac{f(x_{0}+h)-f(x_{0})}{h}=f'(x_{0})=c\in\mathbb{R}$$
 
-Integrale = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b] individuata dai punti $x_{0},...,x_{n}$$ con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $$j=0,...,n$$ 
+*Integrale* = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b\] individuata dai punti $x_{0},...,x_{n}$$ con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $$j=0,...,n$$ e scegliamo in ciascun intervallo $$[x_{j-1},x_{j}]$$, un punto albitrario $$\xi_{j}$. Costruiamo la somma di Cauchy-Riemann
+$$S_{n}=\sum\limits_{j=1}^{n}f(\xi)\cdot(x_{j}-x_{j-1})=\frac{b-a}{n}\sum\limits_{j=1}^{n}f(\xi)$$
+Il limite $$n\rightarrow+\infty$$ di questa somma è l'integrale di f in \[a,b\].
+$$\lim_{n\rightarrow+\infty}S_{n}=\int_{a}^{b}f(x)dx$$
 
 **Derivabilità di una funzione in x**
-Una funzione è derivabile in $$x_{0}$ se il limite sinistro e il limite destro del rapporto incrementale nel punto esistono finiti e uguali.
-$$\lim_{x\rightarrow0^{-}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=\lim_{x\rightarrow0^{+}}\frac{f(x_{0}+h)-f_{x_{0}}}{h}=c\in\mathbb{R}$$
+Una funzione è derivabile in $$x_{0}$$ se il limite sinistro e il limite destro del rapporto incrementale nel punto esistono finiti e uguali.
+$$\lim_{h\rightarrow0^{-}}\frac{f(x_{0}+h)-f(x_{0})}{h}=\lim_{h\rightarrow0^{+}}\frac{f(x_{0}+h)-f(x_{0})}{h}=c\in\mathbb{R}$$
 
 ### > Teoremi
 **Teorema di Rolle**
@@ -37,13 +41,15 @@ $$L=\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}=\lim_{x\rightarrow x_{0}}\frac{
 Se $$f:[a,b]\rightarrow\mathbb{R}$$ è continua e $$c\in[a,b]$$ definita $$F_{c}(x)=\int^{x}_{c}f(t)dt$$, allora Fc è derivabile e vale $$F'_{c}(x)=f(x)$$ per $$x\in[a,b]$$. 
 
 **Teorema della media integrale**
-Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che $$f(c)=\frac{1}{b-a}\int_{a}^{b}f(t)dt$$
+Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che 
+$$f(c)=\frac{1}{b-a}\int_{a}^{b}f(t)dt$$
 ### > Criteri di convergenza
 **Criterio del confronto**
 Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, se $$a_{n}\leq b_{n}$$ definitivamente, allora se $$\sum\limits b_{n}$$ converge $$\sum\limits a_{n}$$ converge e se $$\sum\limits a_{n}$$ diverge $$\sum\limits b_{n}$$ diverge.
 
 **Criterio del confronto asintotico**
-Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, con $$b_{n}\neq0$$ per ogni $$n\in\mathbb{N}$$ e supponiamo che esiste $$\lim_{n\rightarrow+\infty}\frac{a_{n}}{b_{n}}=L$$
+Siano $$\sum\limits a_{n}$$ e $$\sum\limits b_{n}$$ due serie dai termini positivi, con $$b_{n}\neq0$$ per ogni $$n\in\mathbb{N}$$ e supponiamo che esiste 
+$$\lim_{n\rightarrow+\infty}\frac{a_{n}}{b_{n}}=L$$
 allora
 - se $$L\in(0,+\infty)$$, le due serie hanno lo stesso carattere
 - se $$L=0$$ e $$\sum\limits b_{n}$$ converge, $$\sum\limits a_{n}$$ converge
@@ -65,13 +71,13 @@ allora
 **Criterio di Leibniz**
 Si consideri $$\sum\limits_{n\geq0}(-1)^{n}a_{n}$$ se
 1. $$a_{n}\geq0$$ per ogni $$n\geq0$$
-2. $$a_{n}\geq a_{n+1}$$
+2. $$a_{n}\geq a_{n+1}$$ 
 3. $$\lim_{n\rightarrow+\infty}a_{n}=0$$
 allora la serie converge.
 
-## ~ Pratica
+## Pratica
 
-$\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
+ $\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
 
 Simmetrie
 pari: $$f(-x)=f(x)\qquad$$ dispari: $$f(-x)=-f(x)$$
