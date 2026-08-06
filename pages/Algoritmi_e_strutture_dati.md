@@ -1799,7 +1799,7 @@ Per risolvere $$S=S_{0,+\infty}$$ viene invocata la soluzione solo di problemi d
 Algoritmo iterattivo
 ```
 Greedy_Sec(s,f)
-	n=len9gth(s)
+	n=length(s)
 	A=s[1]
 	last=1 // indice dell'ultima attività selezionata
 	for m=2 to n do
