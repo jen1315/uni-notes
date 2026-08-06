@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Appunti di Programmazione ad Oggetti
+title: Appunti di programmazione ad oggetti
 share: true
 ---
 Una carrellata di informazioni utili per l'appello di Programmazione ad Oggetti @unipd
@@ -15,11 +15,47 @@ Una carrellata di informazioni utili per l'appello di Programmazione ad Oggetti 
 ### Funzioni
 #### controllo di tipo 
 `typeid(T)` per comparazioni
-`dynamic_cast<T*>(p)` 
+`dynamic_cast<T*>(p)` per cast dinamico, false quando non possibile
 #### costruttori e distruttori
-Costruttore di default chiama costruttori delle classi base.
+``` c++
+class A {
+private:
+	int num;
+};
 
-Costruttore di copia standard chiama i costruttori di copia delle classi base, esistono anche quando non sono ridefinite.
+class B : public virtual A {
+private:
+	std::string str;
+public:
+	B(int n) {this.num = n+1};
+};
+
+class C : public B {
+private:
+	Object& ref;
+};
+
+class D : public C {
+private:
+	vector<double>* v;
+};
+```
+
+Costruttore di default chiama costruttori delle classi base.
+``` c++
+D() {
+	v = new vector<double>();
+}
+```
+
+Per ridefinire un costruttore di copia standard si procede:
+1) invocando il costruttore di copia della sua base virtuale
+2) invocando il costruttore di copia delle sue superclassi DIRETTE e solo di quelle dirette. Sarebbe insensato chiamare le sue superclassi non dirette, visto che queste verranno già invocate dai costruttori di copia delle superclassi indirette
+3) I campi dati dell'oggetto (non di quelli dei sottooggetti che sono costruiti dai vari costruttori di copia)
+
+``` c++
+D(D& d): A(d), C(d), v(d.v) {}
+```
 
 Distruttori profondi gestiscono i campi puntatore della propria classe.
 
