@@ -13,7 +13,7 @@ Una carrellata di informazioni utili per l'appello di Analisi 1 @unipd
 *Derivata* = Sia $$f:(a,b)\rightarrow\mathbb{R}$$, la derivata è il limite finito di 
 $$\lim_{h\rightarrow0}\frac{f(x_{0}+h)-f(x_{0})}{h}=f'(x_{0})=c\in\mathbb{R}$$
 
-*Integrale* = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b\] individuata dai punti $x_{0},...,x_{n}$$ con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $$j=0,...,n$$ e scegliamo in ciascun intervallo $$[x_{j-1},x_{j}]$$, un punto albitrario $$\xi_{j}$. Costruiamo la somma di Cauchy-Riemann
+*Integrale* = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b\] individuata dai punti x0,...,xn con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $j=0,...,n$$ e scegliamo in ciascun intervallo $$[x_{j-1},x_{j}]$$, un punto albitrario $$\xi_{j}$. Costruiamo la somma di Cauchy-Riemann
 $$S_{n}=\sum\limits_{j=1}^{n}f(\xi)\cdot(x_{j}-x_{j-1})=\frac{b-a}{n}\sum\limits_{j=1}^{n}f(\xi)$$
 Il limite $$n\rightarrow+\infty$$ di questa somma è l'integrale di f in \[a,b\].
 $$\lim_{n\rightarrow+\infty}S_{n}=\int_{a}^{b}f(x)dx$$
