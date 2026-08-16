@@ -10,7 +10,7 @@ Una carrellata di informazioni utili per l'appello di Analisi 1 @unipd
 
 *Limite* = 
 
-*Derivata* = Sia $$f:(a,b)\rightarrow\mathbb{R}$$, la derivata è il limite finito di 
+*Derivata* = Sia $$f:(a,b)\rightarrow\mathbb{R}$$ e $$x_{0}\in(a,b)$$, la derivata è il limite finito di 
 $$\lim_{h\rightarrow0}\frac{f(x_{0}+h)-f(x_{0})}{h}=f'(x_{0})=c\in\mathbb{R}$$
 
 *Integrale* = Sia $$f:[a,b]\rightarrow\mathbb{R}$$ limitata, consideriamo la suddivisione di \[a,b\] individuata dai punti x0,...,xn con $$x_{j}=a+jh$$ dove $$h=\frac{b-a}{n}$$ e $j=0,...,n$$ e scegliamo in ciascun intervallo $$[x_{j-1},x_{j}]$$, un punto albitrario $$\xi_{j}$. Costruiamo la somma di Cauchy-Riemann
@@ -38,7 +38,8 @@ Siano $$f,g:[a,b]\rightarrow\mathbb{R}$$ continue e derivabili in $$]a,b[-\{0\}$
 $$L=\lim_{x\rightarrow x_{0}}\frac{f'(x)}{g'(x)}=\lim_{x\rightarrow x_{0}}\frac{f(x)}{g(x)}$$
 
 **Teorema fondamentale del calcolo integrale**
-Se $$f:[a,b]\rightarrow\mathbb{R}$$ è continua e $$c\in[a,b]$$ definita $$F_{c}(x)=\int^{x}_{c}f(t)dt$$, allora Fc è derivabile e vale $$F'_{c}(x)=f(x)$$ per $$x\in[a,b]$$. 
+Se $$f:[a,b]\rightarrow\mathbb{R}$$ è continua e $$x\in[a,b]$$ definita $$F(x)=\int^{x}_{c}f(t)dt$$, allora F è derivabile e vale $$F'(x)=f(x)$$. 
+$$\begin{align}F'(x)&=\lim_{h\rightarrow0}\frac{F(x+h)-F(x)}{h}=\lim_{h\rightarrow0}\frac{\int_{0}^{x+h}f(t)dt-\int_{0}^{x}(t)dt}{h}\\&=\lim_{h\rightarrow0}\frac{\int_{0}^{x}f(t)dt+\int_{x}^{x+h}f(t)dt-\int_{0}^{x}(t)dt}{h}=\lim_{h\rightarrow0}\frac{1}{h}\int_{x}^{x+h}f(t)dt\\ x+h\rightarrow x\end{align}$$
 
 **Teorema della media integrale**
 Sia $$f$$ continua in $$[a,b]$$. Allora esiste $$c\in[a,b]$$ tale che 
@@ -84,6 +85,8 @@ pari: $$f(-x)=f(x)\qquad$$ dispari: $$f(-x)=-f(x)$$
 
 ### > Limiti
 
+$$\dfrac{\pm1}{0^{\pm}}=\pm\infty$$
+
 **Equivalenze asintotiche**
 (per $$x\rightarrow0$$)
 $$\sin x\sim x\qquad 1-\cos x\sim\frac{1}{2}x^{2}\qquad \tan x\sim x$$
@@ -100,6 +103,14 @@ di polinomi composti
   $$\frac{d}{dx}[f(x)\cdot g(x)]=f'(x)g(x)+f(x)g'(x)$$
 - rapporto
   $$\frac{d}{dx}[\frac{f(x)}{g(x)}]=\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^{2}}$$
+- funzione di funzione
+  $$\frac{d}{dx}[f(g(x))]=f'(g(x))\cdot g'(x)$$
+
+Candidati punti di massimo o minimo $$f'(x)=0$$
+Studio della monotonia con disequazione: > crescente, < decrescente
+
+Limiti ai estremi della derivata
+se $$\sup/\inf f=\pm\infty$$ allora non c'è punto di massimo/minimo
 
 ### > Integrali
 **Operazioni tra polinomi**
@@ -120,3 +131,11 @@ di polinomi composti
 2. FATTORIZZARE il denominatore
 3. DECOMPORRE in frazioni$$\frac{1}{(x-c_{1})(x+c_{2})}=\frac{A}{x-c_{1}}+\frac{B}{x+c_{2}}=\frac{Ax+c_{2}A+Bx-c_{1}B}{(x-c_{1})(x+c_{2})}=\frac{(A+B)x+c_{1}A-c_{2}B}{(x-c_{1})(x+c_{2})}$$   $$\begin{cases}A+B=0\\ c_{1}A-c_{2}B=1\end{cases}\rightarrow\begin{cases}A=-B\\ B=\frac{-1+c_{1}A}{c_{2}}\end{cases}$$
 4. INTEGRARE
+
+Equazioni differenziali
+**Problema di Cauchy**
+$$\begin{cases}y'(t)+a_{0}(t)\cdot y(t)=g(t)\\ y(t_{0})=t_{0}\end{cases}$$
+
+$$y(t)=e^{-A(t)}\left[y_{0}+\int_{t_{0}}^{t}(g(s)\cdot e^{A(s)})ds\right]$$
+con $$A(t):=\int_{t_{0}}^{t}(a_{0}(s))ds$$
+
