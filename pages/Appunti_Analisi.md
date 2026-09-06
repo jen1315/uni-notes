@@ -83,6 +83,14 @@ allora la serie converge.
 Simmetrie
 pari: $$f(-x)=f(x)\qquad$$ dispari: $$f(-x)=-f(x)$$
 
+Disequazione
+risolvi la sua equazione
+
+| soluzione equazione | $$ax^{2}+bx+c>0$$           | $$ax^{2}+bx+c\geq0$$              | $$ax^{2}+bx+c<0$$ | $$ax^{2}+bx+c\leq0$$      |
+| ------------------- | ------------------------- | ------------------------------- | --------------- | ----------------------- |
+| $$x_{1}\neq x_{2}$$   | $$x<x_{1}\wedge x>x_{2}$$   | $$x\leq x_{1}\wedge x\geq x_{2}$$ | $$x_{1}<x<x_{2}$$ | $$x_{1}\leq x\leq x_{2}$$ |
+| $$x_{1}=x_{2}$$       | $$\forall x,\ x\neq x_{1}$$ | $$\forall x$$                     | $$\not\exists x$$ | $$x=x_{1}$$               |
+| $$\Delta<0$$          | $$\forall x$$               | $$\forall x$$                     | $$\not\exists x$$ | $$\not\exists x$$         |
 ### > Limiti
 
 $$\dfrac{\pm1}{0^{\pm}}=\pm\infty$$
@@ -129,7 +137,7 @@ se $$\sup/\inf f=\pm\infty$$ allora non c'è punto di massimo/minimo
 1. DIVISIONE tra polinomi
    (saltare questo passo se gr N(x) < gr D(x))
 2. FATTORIZZARE il denominatore
-3. DECOMPORRE in frazioni$$\frac{1}{(x-c_{1})(x+c_{2})}=\frac{A}{x-c_{1}}+\frac{B}{x+c_{2}}=\frac{Ax+c_{2}A+Bx-c_{1}B}{(x-c_{1})(x+c_{2})}=\frac{(A+B)x+c_{1}A-c_{2}B}{(x-c_{1})(x+c_{2})}$$   $$\begin{cases}A+B=0\\ c_{1}A-c_{2}B=1\end{cases}\rightarrow\begin{cases}A=-B\\ B=\frac{-1+c_{1}A}{c_{2}}\end{cases}$$
+3. DECOMPORRE in frazioni$$\frac{1}{(x-c_{1})(x+c_{2})}=\frac{A}{x-c_{1}}+\frac{B}{x+c_{2}}=\frac{A(x+c_{2})+B(x-c_{1})}{(x-c_{1})(x+c_{2})}=\frac{(A+B)x+c_{1}A-c_{2}B}{(x-c_{1})(x+c_{2})}$$   $$\begin{cases}A+B=0\\ c_{1}A-c_{2}B=1\end{cases}\rightarrow\begin{cases}A=-B\\ c_{2}B=-1+c_{1}A\end{cases}$$
 4. INTEGRARE
 
 Equazioni differenziali
