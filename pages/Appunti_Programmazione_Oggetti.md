@@ -32,18 +32,23 @@ public:
 
 class C : public B {
 private:
-	Object& ref;
+	Object* ref;
 };
 
 class D : public C {
 private:
 	vector<double>* v;
+public:
+	D();     // costruttore di default
+	D(D& d); // costruttore di copia
+	~D();    // distruttore
+	D* clone() const;
 };
 ```
 
-Costruttore di default chiama costruttori delle classi base.
+Costruttore di default chiama costruttori delle classi base e non ha niente nel parametro.
 ``` c++
-D() {
+D() : A(0), C() {
 	v = new vector<double>();
 }
 ```
@@ -58,6 +63,13 @@ D(D& d): A(d), C(d), v(d.v) {}
 ```
 
 Distruttori profondi gestiscono i campi puntatore della propria classe.
+
+Funzione di clonazione chiama il costruttore di copia su \*this;
+``` c++
+D* clone() const {
+	return new D(*this);
+}
+```
 
 ### Altre informazioni utili
 
