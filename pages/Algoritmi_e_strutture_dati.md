@@ -163,10 +163,12 @@ Induzione su $$\ell=$$
 
 **Principio di Induzione**
 proprietà parametrica in $$n\in\mathbb{N}\qquad P(n)=\{…n…\}$$
-per dimostrare che $$P(n)$$ vale per ogni $$n\in\mathbb{N}$$ $\left.\begin{array}{ll}P(0)&\text{caso base}\\\text{assumendo }P(n)\text{ dimostro che }P(n+1)&\text{caso induttivo}\end{array}\right\}\rightarrow$$ per ogni $$n\in\mathbb{N}$$ vale $$P(n)$$
+per dimostrare che $$P(n)$$ vale per ogni $$n\in\mathbb{N}$$ 
+
+$\left.\begin{array}{ll}P(0)&\text{caso base}\\\text{assumendo }P(n)\text{ dimostro che }P(n+1)&\text{caso induttivo}\end{array}\right\}\rightarrow$$ per ogni n vale $$P(n)$$
 
 **Induzione forte**
-$$\left.\begin{array}{ll}P(0)\\\text{assumendo }P(n)\text{ vale per ogni }m<n\quad\dim P(n)\end{array}\right\}\rightarrow P(n)$$ vale per ogni $$n$
+$$\left.\begin{array}{ll}P(0)\\\text{assumendo }P(n)\text{ vale per ogni }m<n\quad\dim P(n)\end{array}\right\}\rightarrow P(n)$ vale per ogni n
 
 es. Alberi binari
 ```
