@@ -201,7 +201,7 @@ Non devono essere contradditori.
 
 ![](img/Pasted%20image%2020251028092030.png)
 
-RTB^[4] specifica
+RTB[^4] specifica
 - quali vincoli le tecnologie hanno sul design
 - capire come le tecnologie eterogenee possono essere usate insieme (proof of concept)
 
