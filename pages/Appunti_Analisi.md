@@ -23,6 +23,23 @@ Una funzione è derivabile in $$x_{0}$$ se il limite sinistro e il limite destro
 $$\lim_{h\rightarrow0^{-}}\frac{f(x_{0}+h)-f(x_{0})}{h}=\lim_{h\rightarrow0^{+}}\frac{f(x_{0}+h)-f(x_{0})}{h}=c\in\mathbb{R}$$
 
 ### > Teoremi
+**Principio di sostituzione degli infinitesimi**
+Se $$f_{1}\sim f_{2}$$ e $$g_{1}\sim g_{2}$$ per $$x\rightarrow x_{0}$$, allora $$\lim\frac{f_{1}}{g_{1}}=\frac{f_{2}}{g_{2}}$$.
+Dimostrazione:
+Moltiplichiamo e dividiamo il rapporto per i termini asintotici, 
+$$\frac{f_{1}}{g_{1}}=\frac{f_{1}}{f_{2}}\cdot\frac{f_{2}}{g_{2}}\cdot\frac{g_{2}}{g_{1}}$$
+Calcoliamo il limite del prodotto. I rapporti asintotici tendono a 1
+$$=1\cdot\lim(\frac{f_{2}}{g_{2}})\cdot1=\lim\frac{f_{2}}{g_{2}}$$
+
+**Teorema di Weierstrass**
+Sia f continua in $$[a,b]$$. Allora ammette massimo assoluto M e minimo assoluto m.
+
+**Teorema di Bolzano o degli zeri**
+Sia f continua in $$[a,b]$$. Se $$f(a)\cdot f(b)<0$$, esiste un punto $$c\in(a,b)$$ dove $$f(c)=0$$.
+
+**Teorema di Bolzano-Weierstrass**
+Sia $$(x_{n})_{n}$$ una successione di numeri reali, se essa è limitata allora esiste una sotto successione $$(x_{n_{k}})_{k}$$ convergente.
+
 **Teorema di Rolle**
 Sia $$f:[a,b]\rightarrow\mathbb{R}$$ continua e derivabile in $$]a,b[$$ tale che $$f(a)=f(b)$$ allora $$]X_{0} \in[a,b]:f'(x_0)=0$$.
 
@@ -78,7 +95,7 @@ allora la serie converge.
 
 ## Pratica
 
- $\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
+.$\sqrt{x(...)}\rightarrow|x|\sqrt{(...)}$$
 
 Simmetrie
 pari: $$f(-x)=f(x)\qquad$$ dispari: $$f(-x)=-f(x)$$
@@ -91,6 +108,7 @@ risolvi la sua equazione
 | $$x_{1}\neq x_{2}$$   | $$x<x_{1}\wedge x>x_{2}$$   | $$x\leq x_{1}\wedge x\geq x_{2}$$ | $$x_{1}<x<x_{2}$$ | $$x_{1}\leq x\leq x_{2}$$ |
 | $$x_{1}=x_{2}$$       | $$\forall x,\ x\neq x_{1}$$ | $$\forall x$$                     | $$\not\exists x$$ | $$x=x_{1}$$               |
 | $$\Delta<0$$          | $$\forall x$$               | $$\forall x$$                     | $$\not\exists x$$ | $$\not\exists x$$         |
+
 ### > Limiti
 
 $$\dfrac{\pm1}{0^{\pm}}=\pm\infty$$
