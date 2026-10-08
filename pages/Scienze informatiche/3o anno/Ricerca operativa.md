@@ -20,10 +20,11 @@ Modelli matematici: funzione obiettivo e vincoli sono espressi come relazioni ma
 
 > ❗ Ricordarsi i vincoli di dominio.
 
-|           | Prodotti          | Risorse                                |
+| <br><br>  | Prodotti          | Risorse                                |
 | --------- | ----------------- | -------------------------------------- |
 | Insiemi   | {Lattuga, Patata} | {terreno, semi, tuberi, fertilizzante} |
 | Parametri | 3000, 5000        | 11, 70, 10, 145                        |
+
 Dobbiamo trovare 
 $$x_{L}:$$ quantità in ettari da destinare a lattuga
 $$x_{P}:$$ quantità in ettari da destinare a patata
@@ -60,11 +61,13 @@ $$b_{i}:$$ termini noti (parametri)
 $$z:$$ funzione obiettivo
 $$x_{j}:$$ variabili decisionali 
 
-> **Modello di costo minimo**$$\begin{array}{lll}\min&\sum\limits_{i\in I}C_{i}x_{i}&\\ s.t.\\&\sum\limits_{i\in I}A_{ij}x_{i}\geq D_{j}&\forall i\in J\\&x_{i}\in\mathbb{R}_{+}[\mathbb{Z}_{+}|\{0,1\}]&\forall i\in I\end{array}$$
+> **Modello di costo minimo**
+> $$\begin{array}{lll}\min&\sum\limits_{i\in I}C_{i}x_{i}&\\ s.t.\\&\sum\limits_{i\in I}A_{ij}x_{i}\geq D_{j}&\forall i\in J\\&x_{i}\in\mathbb{R}_{+}[\mathbb{Z}_{+}|\{0,1\}]&\forall i\in I\end{array}$$
 
 Il modello del mix ottimo di produzione è simile a quello del costo minimo ma usando il massimo e con vincoli al $$\leq$$ sulla quantità di risorse disponibili.
 
->**Modelli di trasporto**$$\begin{array}{lll}\min&\sum\limits_{i\in I}\sum\limits_{i\in J}C_{ij}x_{ij}&\\ s.t.\\&\sum\limits_{i\in J}x_{ij}\leq O_{i}&\forall i\in I\\&\sum\limits_{i\in I}\geq D_{j}&\forall i\in J\\&x_{ij}\in\mathbb{R}_{+}[\mathbb{Z}_{+}|\{0,1\}]&\forall i\in I, j\in J\end{array}$$
+>**Modelli di trasporto**
+>$$\begin{array}{lll}\min&\sum\limits_{i\in I}\sum\limits_{i\in J}C_{ij}x_{ij}&\\ s.t.\\&\sum\limits_{i\in J}x_{ij}\leq O_{i}&\forall i\in I\\&\sum\limits_{i\in I}\geq D_{j}&\forall i\in J\\&x_{ij}\in\mathbb{R}_{+}[\mathbb{Z}_{+}|\{0,1\}]&\forall i\in I, j\in J\end{array}$$
 
 ---
 Al lunedì sono richiesti 17 infermieri, al martedì 13, al mercoledì 15, al giovedì 19, al venerdì 14, al sabato 16 e alla domenica ne servono 11. Ogni turno di lavoro dura 5 giorni ininterrotti.
@@ -152,7 +155,8 @@ E: privato, 5 rischio, 2 anni, 6.1%
 I fondi pubblici e dello stato sono tassati del 30% e almeno il 40% del capitale deve essere riservato a questi. La durata media dell'investimento non deve superare i 5 anni.
 Un investimento in C blocca l'investimento in D e viceversa. E' possibile investire in E solo se si 
 
-$\max4.5x_{A}+0.7(5.4x_{B}+5.1x_{C}+4.4x_{D})+6.1x_{E}$
+$\max4.5x_{A}+0.7(5.4x_{B}+5.1x_{C}+4.4x_{D})+6.1x_{E}$ 
+
 | s.t.                                 |                                                |
 | :----------------------------------- | ---------------------------------------------- |
 | $$x_A+x_B+x_C+x_D+x_E$$                | $$\leq100000$$                                   |
@@ -279,14 +283,14 @@ Vincolo è saturo quando $$s_{1}=0$$ e lasco quando $$\geq0$$.
 		(4) Illimitata? Non so
 		(5) entra x1 ed esce $$\min\{\frac{2}{2},\frac{5}{1},\frac{6}{2}\}=x_{4}$$
 	Iter 2) $$B=[x_{1}\ x_{5}\ x_{6}]$$
-		$$\begin{array}{cccccc|c|c\quad c}x_{1}&x_{2}&x_{3}&x_{4}&x_{5}&x_{6}&-z&\bar{b}\\\hline0&1/2&-3/2&3/2&0&0&-1&0&R'_{0}=R_{0}+3R'_{1}\\\hline1&1/2&1/2&1/2&0&0&0&1&R'_{1}=R_{1}/2\\0&3/2&5/2&-1/2&1&0&0&4&R'_{2}=R_{2}-R'_{1}\\0&1&0&-1&0&1&0&4&R'_{3}=R_{3}-R'_{1}\end{array}$$
+		$$\begin{array}{cccccc|c|cc}x_{1}&x_{2}&x_{3}&x_{4}&x_{5}&x_{6}&-z&\bar{b}\\\hline0&1/2&-3/2&3/2&0&0&-1&0&R'_{0}=R_{0}+3R'_{1}\\\hline1&1/2&1/2&1/2&0&0&0&1&R'_{1}=R_{1}/2\\0&3/2&5/2&-1/2&1&0&0&4&R'_{2}=R_{2}-R'_{1}\\0&1&0&-1&0&1&0&4&R'_{3}=R_{3}-R'_{1}\end{array}$$
 		(1) FC? Sì
 		(2) Ammissibile? Sì
 		(3) Ottima? Non so
 		(4) Illimitata? Non so
 		(5) entra x3 ed esce $$\min\{\frac{1}{\frac{1}{2}},\frac{4}{\frac{5}{2}},\frac{4}{0}\}=x_{5}$$
 	Iter 3) $$B=[x_{1}\ x_{3}\ x_{6}]$$
-		$$\begin{array}{cccccc|c|c\quad c}x_{1}&x_{2}&x_{3}&x_{4}&x_{5}&x_{6}&-z&\bar{b}\\\hline0&7/5&0&6/5&3/5&0&-1&6/5&R'_{0}=R_{0}+\frac{3}{2}R'_{2}\\\hline1&1/5&0&3/5&0&0&0&4/5&R'_{1}=R_{1}-\frac{1}{2}R'_{2}\\0&3/5&1&-1/5&2/5&0&0&8/5&R'_{2}=\frac{2}{5}R_{2}\\0&1&0&-1&0&1&0&4&\end{array}$$
+		$$\begin{array}{cccccc|c|cc}x_{1}&x_{2}&x_{3}&x_{4}&x_{5}&x_{6}&-z&\bar{b}\\\hline0&7/5&0&6/5&3/5&0&-1&6/5&R'_{0}=R_{0}+\frac{3}{2}R'_{2}\\\hline1&1/5&0&3/5&0&0&0&4/5&R'_{1}=R_{1}-\frac{1}{2}R'_{2}\\0&3/5&1&-1/5&2/5&0&0&8/5&R'_{2}=\frac{2}{5}R_{2}\\0&1&0&-1&0&1&0&4&\end{array}$$
 		(1) FC? Sì
 		(2) Ammissibile? Sì
 		(3) Ottima? Sì, non ci sono costi ridotti negativi
