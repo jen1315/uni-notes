@@ -73,48 +73,86 @@ Il modello del mix ottimo di produzione è simile a quello del costo minimo ma u
 Al lunedì sono richiesti 17 infermieri, al martedì 13, al mercoledì 15, al giovedì 19, al venerdì 14, al sabato 16 e alla domenica ne servono 11. Ogni turno di lavoro dura 5 giorni ininterrotti.
 
 $$y_{t}:\#$$ infermieri del turno t={lu, ma, me, gio, ve, sa, do}
-$\begin{array}{llllllll}\min &y_{lu}+&y_{ma}+&y_{me}+&y_{gio}+&y_{ve}+&y_{sa}+&y_{do}&\\ s.t.\\&y_{lu}+&&&y_{gio}+&y_{ve}+&y_{sa}+&y_{do}&\leq17\\&y_{lu}+&y_{ma}+&&&y_{ve}&y_{sa}+&y_{do}&\leq13\\&y_{lu}+&y_{ma}&y_{me}+&&&y_{sa}+&y_{do}&\leq15\\&y_{lu}+&y_{ma}&y_{me}+&y_{gio}+&&&y_{do}&\leq19\\&y_{lu}&y_{ma}&y_{me}+&y_{gio}+&y_{ve}+&&&\leq14\\&&y_{ma}&y_{me}+&y_{gio}+&y_{ve}+&y_{sa}+&y_{do}&\leq16\\&&&y_{me}+&y_{gio}+&y_{ve}+&y_{sa}+&y_{do}&\leq11\\&y_{lu},&y_{ma},&y_{me},&y_{gio},&y_{ve},&y_{sa},&y_{do}&\in\mathbb{Z}_{+}\end{array}$
+ 
+| min  | $$y_{lu}$$  | $$+y_{ma}$$ | $$+y_{me}$$ | $$+y_{gio}$$ | $$+y_{ve}$$ | $$+y_{sa}$$ | $$+y_{do}$$ |                     |
+| ---- | --------- | --------- | --------- | ---------- | --------- | --------- | --------- | ------------------- |
+| s.t. | $$y_{lu}$$  |           |           | $$+y_{gio}$$ | $$+y_{ve}$$ | $$+y_{sa}$$ | $$+y_{do}$$ | $$\leq17$$            |
+|      | $$y_{lu}$$  | $$+y_{ma}$$ |           |            | $$+y_{ve}$$ | $$+y_{sa}$$ | $$+y_{do}$$ | $$\leq13$$            |
+|      | $$y_{lu}$$  | $$+y_{ma}$$ | $$+y_{me}$$ |            |           | $$+y_{sa}$$ | $$+y_{do}$$ | $$\leq15$$            |
+|      | $$y_{lu}$$  | $$+y_{ma}$$ | $$+y_{me}$$ | $$+y_{gio}$$ |           |           | $$+y_{do}$$ | $$\leq19$$            |
+|      | $$y_{lu}$$  | $$+y_{ma}$$ | $$+y_{me}$$ | $$+y_{gio}$$ | $$+y_{ve}$$ |           |           | $$\leq14$$            |
+|      |           | $$y_{ma}$$  | $$+y_{me}$$ | $$+y_{gio}$$ | $$+y_{ve}$$ | $$+y_{sa}$$ |           | $$\leq16$$            |
+|      |           |           | $$y_{me}$$  | $$+y_{gio}$$ | $$+y_{ve}$$ | $$+y_{sa}$$ | $$+y_{do}$$ | $$\leq11$$            |
+|      | $$y_{lu},$$ | $$y_{ma},$$ | $$y_{me},$$ | $$y_{gio},$$ | $$y_{ve},$$ | $$y_{sa},$$ | $$y_{do}$$  | $$\in\mathbb{Z}_{+}$$ |
 
 E' consigliato risolvere la formulazione del modello in modo incrementali dalle descrizioni del testo.
 
 ---
-Si vuole scegliere le località in cui attivare un CUP in modo che il tempo medio di arrivo da ogni quartiere sia sotto i 15 minuti.
 
-|      | loc1 | loc2 | loc3 | loc4 | loc5 | loc6 |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| qt.1 | 5    | 10   | 20   | 30   | 30   | 20   |
-| qt.2 | 10   | 5    | 25   | 35   | 20   | 10   |
-| qt.3 | 20   | 25   | 5    | 15   | 30   | 20   |
-| qt.4 | 30   | 35   | 15   | 5    | 15   | 25   |
-| qt.5 | 30   | 20   | 30   | 15   | 5    | 14   |
-| qt.6 | 20   | 10   | 20   | 25   | 14   | 5    |
+|      | loc1 (€5k) | loc2 (€20k) | loc3 (€7k) | loc4 (€15k) | loc5 (€10k) | loc6 (€16k) |
+| ---- | ---------- | ----------- | ---------- | ----------- | ----------- | ----------- |
+| qt.1 | 5          | 10          | 20         | 30          | 30          | 20          |
+| qt.2 | 10         | 5           | 25         | 35          | 20          | 10          |
+| qt.3 | 20         | 25          | 5          | 15          | 30          | 20          |
+| qt.4 | 30         | 35          | 15         | 5           | 15          | 25          |
+| qt.5 | 30         | 20          | 30         | 15          | 5           | 14          |
+| qt.6 | 20         | 10          | 20         | 25          | 14          | 5           |
+
+Si devono scegliere le località in cui attivare un CUP in modo che il tempo medio di arrivo da ogni quartiere sia sotto i 15 minuti. Si vuole minimizzare il costo di attivazione.
 
 $$L:$$ insieme delle località
 $$Q:$$ insieme dei quartieri
 $$x_{\ell}:$$ 1 se attivo e 0 se non attivo
+ 
+| min  | $$5x_1$$ | $$+20x_2$$ | $$+7x_3$$ | $$+15x_4$$ | $$+10x_5$$ | $$+16x_6$$ |              |
+| ---- | ------ | -------- | ------- | -------- | -------- | -------- | ------------ |
+| s.t. | $$x_1$$  | $$+x_2$$   |         |          |          |          | $$\geq1$$      |
+|      | $$x_1$$  | $$+x_2$$   |         |          |          | $$+x_6$$   | $$\geq1$$      |
+|      |        |          | $$x_3$$   | $$+x_4$$   |          |          | $$\geq1$$      |
+|      |        |          | $$x_3$$   | $$+x_4$$   | $$+x_5$$   |          | $$\geq1$$      |
+|      |        |          |         | $$x_4$$    | $$+x_5$$   | $$+x_6$$   | $$\geq1$$      |
+|      |        |          |         |          | $$x_5$$    | $$+x_6$$   | $$\geq1$$      |
+|      | $$x_1,$$ | $$x_2,$$   | $$x_3,$$  | $$x_4,$$   | $$x_5,$$   | $$x_6$$    | $$\in\{0,1\}$$ |
 
-$\begin{array}{llllllll}\min &5x_{1}&+20x_{2}&+7x_{3}&+15x_{4}&+10x_{5}&+16x_{6}&\\ s.t.\\&x_{1}&+x_{2}&&&&&\geq1\\&x_{1}&+x_{2}&&&&+x_{6}&\geq1\\&&&x_{3}&x_{4}&&&\geq1\\&&&x_{3}&+x_{4}&+x_{5}&&\geq1\\&&&&x_{4}&x_{5}&x_{6}&\geq1\\&&&&&x_{5}&x_{6}&\geq1\\&x_{1},&x_{2},&x_{3},&x_{4},&x_{5},&x_{6}&\in\{0,1\}\end{array}$
+---
+Ci sono 3 impianti produttive di schiuma bassa, media e altra di profitto netto 9, 10 e 12.
+Gli stabilimenti 1, 2, 3 hanno capacità produttiva di 500, 600 e 300 quintali al giorno. Gli stabilimenti 1, 2, 3 hanno magazzini per 900, 800 e 350mq e ogni schiuma occupa 2, 1.5, 1mq rispettivamente al suo tipo. Si deve mantenere un carico di lavoro uniforme.
+
+$$x_{ij}:$$ quantità di schiuma di densità $$j\in\{b,m,a\}$$ nello stabilimento $$i\in\{1,2,3\}$$
+
 
 ---
 Si possono investire in A e B: A profitta 0.4 dopo due anni e B profitta 0.7 dopo tre anni. Dal secondo anno si può investire in C che profitta il doppio dopo 4 anni. Dal quinto anno si può investire in D che profitta 0.3 ogni anno. 
 Vogliamo massimizzare i profitti in sei anni con un budget totale di 10000.
 
 $$x_{ij}:\text{ investiti in }i\in\{A,B,C,D\}\text{ per l'anno }j\in\{1,2,3,4,5\}$$
-$\max0.4(x_{A1}+x_{A2}+x_{A3}+x_{A4})+0.7(x_{B1}+x_{B2}+x_{B3}+x_{B4})+x_{A1}+x_{A2}+x_{A3}+x_{A4}+0.3$
+$\max0.4(x_{A1}+x_{A2}+x_{A3}+x_{A4})+0.7(x_{B1}+x_{B2}+x_{B3})+x_{C2}+0.3(x_{D5})$
 
-| s.t.                           |                           |                                                                            |                                                                  |
-| ------------------------------ | ------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| $$x_{A1}+x_{B1}+x_{C1}+x_{D1}$$  | $$\leq10000$$               |                                                                            |                                                                  |
-| $$x_{C1}=0,\ x_{D1}=0$$          |                           |                                                                            |                                                                  |
-| $$x_{A2}+x_{B2}+x_{C2}+0x_{D2}$$ | $$\leq10000$$               | $$-x_{A1}$$<br>$$-x_{B1}$$                                                     | $$-x_{C1}$$<br>$$-x_{D1}$$                                           |
-| $$x_{A3}+x_{B3}+x_{C3}+0x_{D3}$$ | $$\leq10000$$               | $+0.4x_{A1}-x_{A2}$$<br>$$-x_{B1}-x_{B2}$$                                    | $$-x_{C1}-x_{C2}$$<br>$$-x_{D1}-x_{D2}$$                             |
-| $$x_{A4}+x_{B4}+x_{C4}+0x_{D4}$$ | $$\leq10000$$               | $$+0.4(x_{A1}+x_{A2})-x_{A3}$$<br>$$+0.7x_{B1}-x_{B2}-x_{B3}$$                 | $$-x_{C1}-x_{C2}-x_{C3}$$<br>$$-x_{D1}-x_{D2}-x_{D3}$$               |
-| $$x_{A5}+x_{B5}+x_{C5}+x_{D5}$$  | $$\leq10000$$               | $$+0.4(x_{A1}+x_{A2}+x_{A3})-x_{A4}$$<br>$$+0.7(x_{B1}+x_{B2})-x_{B3}-x_{B4}$$ | $$-x_{C1}-x_{C2}-x_{C3}-x_{C4}$$<br>$$-x_{D1}-x_{D2}-x_{D3}-x_{D4}$$ |
-|                                | $$x_{ij}\in\mathbb{R}^{+}$$ | $$\forall i\in\{A,B,C,D\}$$                                                  | $$\forall j\in\{1,2,3,4,5\}$                                      |
+| s.t.                          |                           |                                                                            |                                                                       |
+| ----------------------------- | ------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| $$x_{A1}+x_{B1}+x_{C1}+x_{D1}$$ | $$\leq10000$$               |                                                                            |                                                                       |
+| $$x_{C1},x_{D1}=0$$             |                           |                                                                            |                                                                       |
+| $$x_{A2}+x_{B2}+x_{C2}+x_{D2}$$ | $$\leq10000$$               | $$-x_{A1}$$<br>$$-x_{B1}$$                                                     | $$-x_{C1}$$<br>$+0.3x_{D1}$$                                             |
+| $$x_{D2}=0$$                    |                           |                                                                            |                                                                       |
+| $$x_{A3}+x_{B3}+x_{C3}+x_{D3}$$ | $$\leq10000$$               | $$+0.4x_{A1}-x_{A2}$$<br>$$-x_{B1}-x_{B2}$$                                    | $$-x_{C1}-x_{C2}$$<br>$$+0.3(x_{D1}+x_{D2})$$                             |
+| $$x_{C3},x_{D3}=0$$             |                           |                                                                            |                                                                       |
+| $$x_{A4}+x_{B4}+x_{C4}+x_{D4}$$ | $$\leq10000$$               | $$+0.4(x_{A1}+x_{A2})-x_{A3}$$<br>$$+0.7x_{B1}-x_{B2}-x_{B3}$$                 | $$-x_{C1}-x_{C2}-x_{C3}$$<br>$$+0.3(x_{D1}+x_{D2}+x_{D3})$$               |
+| $$x_{B4},x_{C4},x_{D4}=0$$      |                           |                                                                            |                                                                       |
+| $$x_{A5}+x_{B5}+x_{C5}+x_{D5}$$ | $$\leq10000$$               | $$+0.4(x_{A1}+x_{A2}+x_{A3})-x_{A4}$$<br>$$+0.7(x_{B1}+x_{B2})-x_{B3}-x_{B4}$$ | $$-x_{C1}-x_{C2}-x_{C3}-x_{C4}$$<br>$$+0.3(x_{D1}+x_{D2}+x_{D3}+x_{D4})$$ |
+| $$x_{A5},x_{B5},x_{C5}=0$$      |                           |                                                                            |                                                                       |
+|                               | $$x_{ij}\in\mathbb{R}^{+}$$ | $$\forall i\in\{A,B,C,D\}$$                                                  | $$\forall j\in\{1,2,3,4,5\}$                                           |
 
 ---
 Vogliamo modelli lineari: min-max, max-min e abs non sono funzioni lineari.
 Gestiamoli nei vincoli.
+
+Linee di produzione di mangime
+
+|     |     |
+| --- | --- |
+|     |     |
+
+
 
 I batch 1,2,3,4,5 devono essere eseguite in ordine in una macchina monoprocessore e hanno una durata di 5,7,4,7,10 minuti. Il primo batch ha una consegna desiderata di 10.32, il secondo 10.38, il terzo 10.42, il quarto 10.52 e il quinto 10.57. l,,.z
 Si ha una penale di 750 euro per ogni minuto in anticipo o ritardo alla consegna. Minimizzare la penale totale.
